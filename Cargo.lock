@@ -4804,12 +4804,23 @@ version = "26.10.3"
 source = "git+https://github.com/FastTrackStudios/fts-fx?rev=5bae622f5d874ce58ab04916ab29a8100e883012#5bae622f5d874ce58ab04916ab29a8100e883012"
 dependencies = [
  "crossbeam-channel",
- "dsp-core",
+ "dsp-core 26.10.3",
  "realfft",
  "serde",
  "smallvec 1.16.4",
  "symphonium",
  "thiserror 2.0.20",
+]
+
+[[package]]
+name = "dsp-core"
+version = "0.1.0"
+source = "git+https://github.com/FastTrackStudios/dsp?rev=75d475b01e96eed4a5ddad8ad6799396f220dd82#75d475b01e96eed4a5ddad8ad6799396f220dd82"
+dependencies = [
+ "atomic_float",
+ "ebur128",
+ "parking_lot",
+ "realfft",
 ]
 
 [[package]]
@@ -10421,9 +10432,10 @@ dependencies = [
 
 [[package]]
 name = "plugin-core"
-version = "26.10.3"
-source = "git+https://github.com/FastTrackStudios/fts-fx?rev=5bae622f5d874ce58ab04916ab29a8100e883012#5bae622f5d874ce58ab04916ab29a8100e883012"
+version = "0.1.0"
+source = "git+https://github.com/FastTrackStudios/plugins?rev=8a3abfe4639b4db9f64a452bf90b64ec96f5c577#8a3abfe4639b4db9f64a452bf90b64ec96f5c577"
 dependencies = [
+ "dsp-core 0.1.0",
  "nice-plug",
  "nice-plug-dioxus",
  "parking_lot",
@@ -12510,7 +12522,7 @@ name = "signal-macromod"
 version = "26.10.3"
 source = "git+https://github.com/FastTrackStudios/signal?rev=ddf0b93c926ec23c46d2cdc8a868d7bf5d6aad95#ddf0b93c926ec23c46d2cdc8a868d7bf5d6aad95"
 dependencies = [
- "dsp-core",
+ "dsp-core 26.10.3",
  "facet",
  "serde",
  "serde_json",

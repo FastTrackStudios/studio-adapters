@@ -56,7 +56,7 @@ license = "GPL-3.0-or-later"
 repository = "https://github.com/FastTrackStudios/signal"
 
 [workspace.dependencies]
-plugin-core = { git = "https://github.com/FastTrackStudios/fts-fx", rev = "5bae622f5d874ce58ab04916ab29a8100e883012" }
+plugin-core = { git = "https://github.com/FastTrackStudios/plugins", rev = "8a3abfe4639b4db9f64a452bf90b64ec96f5c577" }
 protools = { path = "features/adapters/protools" }
 ableton = { path = "features/adapters/ableton" }
 logic = { path = "features/adapters/logic" }
